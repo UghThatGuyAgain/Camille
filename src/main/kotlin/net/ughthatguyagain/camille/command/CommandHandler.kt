@@ -15,9 +15,12 @@ class CommandHandler(private val commandBuilder: CommandBuilder = CommandBuilder
         if(commandBuilder.commands[cutPrefix.split(" ")[0]]!!.arguments) {
             val arguments: List<String> = cutPrefix.split(" ").drop(1).take(2)
             val commandName: String = cutPrefix.split(" ")[0]
-            commandBuilder.commands[commandName]!!.execute(arguments)
+            try {
+                commandBuilder.commands[commandName]!!.execute(arguments)
+            } catch(e: KotlinNullPointerException) {
+                println(e)
+            }
         }
-
         val noArgs = arrayListOf("")
         commandBuilder.commands[cutPrefix]!!.execute(noArgs)
     }
