@@ -4,7 +4,7 @@ A Discord bot just like all the others
 ## Uses:
 Use Camille to check your stats or grab a quick build.
 
-###Commands
+### Commands
 
 Camille uses a prefix of `c.` in order to decipher whether a message is a command or not.
 
