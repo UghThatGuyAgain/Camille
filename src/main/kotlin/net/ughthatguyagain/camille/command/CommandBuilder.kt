@@ -9,7 +9,7 @@ import net.ughthatguyagain.camille.command.commands.TestApi
 
 class CommandBuilder(val commands: HashMap<String, ICommand<String>> =  HashMap()) {
     init {
-        Orianna.setRiotAPIKey("RGAPI-0f81eb3e-c8d7-48f6-a797-42b68862733c")
+        Orianna.setRiotAPIKey("RGAPI-8adb433a-ae4e-4a59-9a4d-e51f29ec135e")
         Orianna.setDefaultRegion(Region.NORTH_AMERICA)
         commands["test"] = Test()
         commands["argstest"] = ArgsTest()
