@@ -5,11 +5,10 @@ A Discord bot just like all the others
 Use Camille to check your stats or grab a quick build.
 
 ### Commands
-
-Camille uses a prefix of `c.` in order to decipher whether a message is a command or not.
-
+Use the prefix c. to tell Camille a command.
 - stats [summoner name] [region]
-    - Retrieve stats of a player from a certain region. Look at their rank, their latest match, and other useful information.
+    - Retrieve player stats from a certain region, including their rank, their latest match, and other useful information.
+
     
 ### Possibly planned for the future
 - Most recent match lookup
