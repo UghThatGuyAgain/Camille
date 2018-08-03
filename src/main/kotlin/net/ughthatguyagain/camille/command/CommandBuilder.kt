@@ -11,8 +11,7 @@ import net.ughthatguyagain.camille.command.commands.TestApi
 
 class CommandBuilder(val commands: HashMap<String, ICommand<String>> =  HashMap()) {
     init {
-        val config = Config()
-        Orianna.setRiotAPIKey(config.key)
+
         commands["test"] = Test()
         commands["argstest"] = ArgsTest()
         commands["testapi"] = TestApi()
